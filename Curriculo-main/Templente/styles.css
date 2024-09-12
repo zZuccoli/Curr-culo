@@ -5,16 +5,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family:"Raleway", sans-serif;
 }
-
-
-
-
 
 body {
     background-color: #f4f4f4;
-    padding: 20px;
+    padding: 40px; 
 }
 
 .resume-container {
@@ -23,12 +19,15 @@ body {
     margin: 0 auto;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 60px; 
+    align-items: flex-start; 
 }
 
 .left-column {
     position: relative;
     width: 30%;
-    padding: 20px;
+    padding-left: 10px; 
+    padding-right: 10px;
 }
 
 .profile {
@@ -37,8 +36,9 @@ body {
 }
 
 .profile img {
-    width: 120px;
-    height: 120px;
+    margin-top: 15%;
+    width: 170px;
+    height: 170px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -57,27 +57,44 @@ body {
     font-family: "Raleway", sans-serif;
 }
 
+.contact {
+    margin: 15% 5%;
+}
+
+.contact-info .email {
+    font-size: 12px;
+    margin-top: 80px;
+}
+
+.contact-info .email img {
+    width: 19px; 
+    height: 19px; 
+    margin-right: 2px; 
+}
+
+
 .contact-info p {
-    font-size: 14px;
-    margin: 10px 0;
+    font-size: 16px;
+    margin: 25px 0;
+    color: #8d8b8b;
+    font-family: "Raleway", sans-serif;
 }
 
 .contact-info img {
-    width: 16px;
-    height: 16px;
-    margin-right: 10px;
+    width: 23px;
+    height: 23px;
+    margin-right: 2px;
     vertical-align: middle;
 }
 
-.technical-skills{
-    position: absolute;
-    bottom: 0;
+.technical-skills {
     width: 100%; 
     margin: 5%;
 }
 
 .technical-skills h3 {
-    margin: 20px 0;
+    margin-top: 150px;
+    margin-bottom: 20px;
 }
 
 .technical-skills ul {
@@ -87,19 +104,59 @@ body {
 .technical-skills ul li {
     font-size: 14px;
     margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.skill-text {
+    flex-basis: 30%; 
+    text-align: left; 
+    margin-right: 20px;
+}
+
+.skill-level {
+    flex-basis: 70%; 
+    display: flex;
+    justify-content: flex-start; 
+    gap: 17px; 
+}
+
+.square {
+    width: 6px;
+    height: 6px;
+    background-color: #ddd; 
+}
+
+.square.filled {
+    background-color: black; 
 }
 
 .right-column {
     width: 70%;
-    padding: 20px;
+    padding: 30px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
 }
 
-.professional-summary h3,
-.employment h3,
 .education h3 {
-    margin: 150px 0px;
+    margin-top: 10%;
     font-size: 18px;
     margin-bottom: 15px;
+}
+
+.professional-summary h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.employment h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 60px;
+    font-size: 22px;
+    margin-bottom: 5px;
 }
 
 .professional-summary p {
@@ -120,6 +177,12 @@ body {
     flex-grow: 1;
 }
 
+.job-time-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+}
+
 .job-time {
     text-align: right;
     font-size: 14px;
@@ -127,7 +190,21 @@ body {
     min-width: 100px; 
 }
 
+.timeBold {
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 2px;
+}
+
 .icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+.ficon {
     width: 16px;
     height: 16px;
     margin-right: 5px;
@@ -136,12 +213,14 @@ body {
 
 .job h4,
 .degree h4 {
+    margin-top: 5%;
     font-size: 16px;
     margin-bottom: 5px;
 }
 
 .job p,
 .degree p {
+    margin-top: 2%;
     font-size: 14px;
     color: #777;
 }
@@ -150,6 +229,6 @@ hr {
     border: none;
     height: 1px;
     background-color: #ddd;
-    margin: 30px 0px;
-
+    margin-top: 40px;
 }
+
